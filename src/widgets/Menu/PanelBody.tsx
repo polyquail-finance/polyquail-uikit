@@ -64,6 +64,9 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           </MenuEntry>
         );
       })}
+      <a href="https://rugdoc.io/project/polyquail/">
+        <img alt="KWIL" src="/images/egg/rugdoc-review-badge-for-light-bg.png" height="61" width="185"/>
+      </a> 
     </Container>
   );
 };
