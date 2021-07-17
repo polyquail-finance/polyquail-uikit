@@ -41,7 +41,7 @@ const PriceLink = styled.a`
 const SettingsEntry = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: 0 8px;
 `;
@@ -86,8 +86,6 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24} />
         )}
-      </SocialEntry>
-      <SettingsEntry>
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
@@ -113,6 +111,8 @@ const PanelFooter: React.FC<Props> = ({
             );
           })}
         </Flex>
+      </SocialEntry>
+      <SettingsEntry>
         <Dropdown
           position="top-right"
           target={
