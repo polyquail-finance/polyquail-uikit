@@ -86,6 +86,8 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24} />
         )}
+      </SocialEntry>
+      <SettingsEntry>
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
@@ -111,9 +113,6 @@ const PanelFooter: React.FC<Props> = ({
             );
           })}
         </Flex>
-      </SocialEntry>
-      <SettingsEntry>
-        <div style={{width: "26px"}} />
         <Dropdown
           position="top-right"
           target={
